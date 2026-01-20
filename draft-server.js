@@ -4,7 +4,7 @@ const path = require('path');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = 8083;
 const DRAFTS_FILE = path.join(__dirname, 'drafts.json');
 
 // 中间件
@@ -147,8 +147,9 @@ app.get('/api/health', (req, res) => {
 });
 
 // 启动服务器
-app.listen(PORT, () => {
-    console.log(`草稿服务器运行在 http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`草稿服务器运行在 http://0.0.0.0:${PORT}`);
+    console.log(`局域网访问地址: http://<你的IP地址>:${PORT}`);
     console.log(`API端点:`);
     console.log(`  GET  /api/drafts        - 获取所有草稿`);
     console.log(`  POST /api/drafts        - 保存草稿`);

@@ -152,5 +152,5 @@ export const defaultColors = {
 // 草稿最大数量
 export const MAX_DRAFTS = 6;
 
-// 服务器URL
-export const SERVER_URL = 'http://localhost:3000/api';
+// 服务器URL - 使用相对路径，这样无论服务器在什么地址都能工作
+export const SERVER_URL = '/api';
