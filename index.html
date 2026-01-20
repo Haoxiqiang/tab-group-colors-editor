@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Group 主题编辑器</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tab Group 主题编辑器</h1>
+            <div class="subtitle">Quetta Android Tab Switcher 样式</div>
+        </header>
+
+        <div class="colors-grid" id="colorsGrid">
+            <!-- 颜色卡片将通过JavaScript动态生成 -->
+        </div>
+
+        <!-- 草稿管理区域 -->
+        <div class="drafts-section">
+            <h3>草稿管理</h3>
+            <div class="drafts-controls">
+                <div class="draft-save-controls">
+                    <input type="text" class="draft-name-input" id="draftNameInput" placeholder="草稿名称" maxlength="20">
+                    <button class="action-btn save-draft-btn" id="saveDraftBtn">保存到草稿</button>
+                </div>
+                <div class="server-controls">
+                    <button class="action-btn server-btn" id="backupBtn">备份到服务器</button>
+                    <button class="action-btn server-btn" id="restoreBtn">从服务器恢复</button>
+                    <button class="action-btn server-btn" id="clearServerBtn">清空服务器</button>
+                </div>
+                <div class="drafts-grid" id="draftsGrid">
+                    <!-- 草稿卡片将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="action-btn reset-btn" id="resetBtn">重置为默认颜色</button>
+            <button class="action-btn export-btn" id="exportBtn">导出颜色文件</button>
+        </div>
+
+        <div class="export-section" id="exportSection">
+            <h3>导出的颜色文件</h3>
+            <div class="export-file">
+                <h4>values/colors.xml</h4>
+                <pre class="export-content" id="exportContent"></pre>
+                <button class="copy-btn" onclick="copyToClipboard('exportContent')">复制内容</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">已复制到剪贴板！</div>
+
+    <!-- 错误处理脚本 -->
+    <script>
+        window.addEventListener('error', function(event) {
+            console.error('全局错误:', event.error);
+            alert('JavaScript错误: ' + event.error.message);
+        });
+    </script>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

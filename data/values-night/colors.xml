@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2025 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Colors used by the tab group color picker UI and for the small color dot indicator on the card. -->
+    <color name="tab_group_color_picker_blue">#8AB4F8</color>
+    <color name="tab_group_color_picker_cyan">#78D9EC</color>
+    <color name="tab_group_color_picker_green">#81C995</color>
+    <color name="tab_group_color_picker_grey">#DADCE0</color>
+    <color name="tab_group_color_picker_orange">#FCAD70</color>
+    <color name="tab_group_color_picker_pink">#FF8BCB</color>
+    <color name="tab_group_color_picker_purple">#C58AF9</color>
+    <color name="tab_group_color_picker_red">#F28B82</color>
+    <color name="tab_group_color_picker_yellow">#FDD663</color>
+    <!-- Colors that define the main background tint for the entire tab group card. -->
+    <color name="tab_group_card_color_grey">#303030</color>
+    <color name="tab_group_card_color_blue">#012C6F</color>
+    <color name="tab_group_card_color_cyan">#003641</color>
+    <color name="tab_group_card_color_green">#00381F</color>
+    <color name="tab_group_card_color_orange">#522302</color>
+    <color name="tab_group_card_color_pink">#620438</color>
+    <color name="tab_group_card_color_purple">#400B84</color>
+    <color name="tab_group_card_color_red">#60150F</color>
+    <color name="tab_group_card_color_yellow">#4D2600</color>
+    <!-- Colors for foreground elements, used for the title, tab counter, and action button on a tab group card. -->
+    <color name="tab_group_card_text_color_grey">#F2F2F2</color>
+    <color name="tab_group_card_text_color_blue">#E7F2FF</color>
+    <color name="tab_group_card_text_color_cyan">#D8F6FF</color>
+    <color name="tab_group_card_text_color_green">#DDF8D8</color>
+    <color name="tab_group_card_text_color_orange">#FFEDE1</color>
+    <color name="tab_group_card_text_color_pink">#FFECF6</color>
+    <color name="tab_group_card_text_color_purple">#F7ECFE</color>
+    <color name="tab_group_card_text_color_red">#FFECEE</color>
+    <color name="tab_group_card_text_color_yellow">#FFF2B4</color>
+    <!-- Colors for the background of empty mini-thumbnail slots within a tab group card. -->
+    <color name="tab_group_card_placeholder_color_grey">#1B1B1C</color>
+    <color name="tab_group_card_placeholder_color_blue">#001944</color>
+    <color name="tab_group_card_placeholder_color_cyan">#001F26</color>
+    <color name="tab_group_card_placeholder_color_green">#002110</color>
+    <color name="tab_group_card_placeholder_color_orange">#321200</color>
+    <color name="tab_group_card_placeholder_color_pink">#3D0023</color>
+    <color name="tab_group_card_placeholder_color_purple">#280255</color>
+    <color name="tab_group_card_placeholder_color_red">#3A0907</color>
+    <color name="tab_group_card_placeholder_color_yellow">#2F1400</color>
+</resources>

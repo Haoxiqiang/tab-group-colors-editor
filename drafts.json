@@ -1,0 +1,16 @@
+{
+  "drafts": [
+    {
+      "id": 1,
+      "name": "测试草稿",
+      "colors": {
+        "tab_group_color_picker_blue": "#1A73E8",
+        "tab_group_card_color_blue": "#D0E4FF",
+        "tab_group_card_text_color_blue": "#001944",
+        "tab_group_card_placeholder_color_blue": "#E7F2FF"
+      },
+      "timestamp": 1768878890889
+    }
+  ],
+  "lastUpdated": "2026-01-20T03:14:50.892Z"
+}
